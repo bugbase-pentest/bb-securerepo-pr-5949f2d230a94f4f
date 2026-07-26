@@ -1,0 +1,12 @@
+name: BugBase revision binding control-30f7fe74d6c0
+
+on:
+  workflow_dispatch:
+
+jobs:
+  binding:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "synthetic control-30f7fe74d6c0 reviewed-A"
