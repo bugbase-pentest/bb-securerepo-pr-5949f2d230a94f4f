@@ -1,12 +1,14 @@
-name: BugBase revision binding race-27fac8b13f58
+name: BugBase Secure Repo Create PR Fixture
 
 on:
   workflow_dispatch:
 
+permissions: write-all
+
 jobs:
-  binding:
+  synthetic:
     if: false
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: echo "synthetic race-27fac8b13f58 changed-B"
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - run: echo "BugBase inert 5949f2d230a94f4f"
