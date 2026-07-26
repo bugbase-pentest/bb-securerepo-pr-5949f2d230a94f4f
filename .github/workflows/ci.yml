@@ -8,5 +8,5 @@ jobs:
     if: false
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: echo "synthetic race-27fac8b13f58 reviewed-A"
+      - uses: actions/checkout@v3
+      - run: echo "synthetic race-27fac8b13f58 changed-B"
