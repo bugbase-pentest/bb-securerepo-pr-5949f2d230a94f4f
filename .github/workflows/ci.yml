@@ -1,14 +1,12 @@
-name: BugBase Secure Repo Create PR Fixture
+name: BugBase revision binding race-confirm-7dd473ee3564
 
 on:
   workflow_dispatch:
 
-permissions: write-all
-
 jobs:
-  synthetic:
+  binding:
     if: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "BugBase inert 5949f2d230a94f4f"
+      - run: echo "synthetic race-confirm-7dd473ee3564 reviewed-A"
