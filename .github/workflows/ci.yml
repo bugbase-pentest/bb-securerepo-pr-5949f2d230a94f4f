@@ -1,0 +1,14 @@
+name: BugBase Secure Repo Create PR Fixture
+
+on:
+  workflow_dispatch:
+
+permissions: write-all
+
+jobs:
+  synthetic:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "BugBase inert 5949f2d230a94f4f"
