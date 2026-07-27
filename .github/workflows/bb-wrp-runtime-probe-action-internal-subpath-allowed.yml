@@ -1,0 +1,16 @@
+name: BugBase WRP Allowed Actions action-internal-subpath-allowed
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Synthetic internal subpath action
+        uses: bugbase-pentest/bb-securerepo-pr-5949f2d230a94f4f/.github/actions/bb-wrp-action-policy-internal@9c5e45a2da9b32a625bc5af0635a510f2cc591e0
+      - name: Marker after internal subpath action
+        run: echo "bb-wrp-runtime-action-internal-subpath-allowed-dryrun-ms3banjz"
