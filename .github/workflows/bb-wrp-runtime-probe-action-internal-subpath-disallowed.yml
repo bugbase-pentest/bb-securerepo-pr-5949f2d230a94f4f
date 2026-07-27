@@ -1,0 +1,16 @@
+name: BugBase WRP Allowed Actions action-internal-subpath-disallowed
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Synthetic internal subpath action
+        uses: bugbase-pentest/bb-securerepo-pr-5949f2d230a94f4f/.github/actions/bb-wrp-action-policy-internal@3cd250fcc311bc35b95c4150c3270dc119492c9f
+      - name: Marker after internal subpath action
+        run: echo "bb-wrp-runtime-action-internal-subpath-disallowed-enforce-ms3bsl57"
