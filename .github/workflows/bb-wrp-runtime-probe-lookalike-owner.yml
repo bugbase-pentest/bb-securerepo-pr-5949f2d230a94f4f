@@ -1,0 +1,16 @@
+name: BugBase WRP Harden Runner Presence lookalike-owner
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: bugbase-pentest/bb-securerepo-pr-5949f2d230a94f4f/.github/actions/bb-wrp-runtime-probe-lookalike-owner@cdce94af8741a3fd1ed886d80366c9e4abf9e3a2
+      - name: Marker after lookalike owner action
+        run: echo "bb-wrp-runtime-lookalike-owner-dryrun-ms394b10"
