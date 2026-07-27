@@ -1,8 +1,0 @@
-name: Harden Runner
-description: Benign BugBase local lookalike action
-runs:
-  using: composite
-  steps:
-    - name: Synthetic local wrapper body
-      shell: bash
-      run: echo "bb-wrp-runtime-local-wrapper-enforce-ms3972ct-local-wrapper"
