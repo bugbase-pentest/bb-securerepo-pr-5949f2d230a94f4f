@@ -1,0 +1,16 @@
+name: BugBase WRP Allowed Actions action-mixed-case
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Allowed mixed-case checkout
+        uses: Actions/Checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Marker after mixed-case checkout
+        run: echo "bb-wrp-runtime-action-mixed-case-dryrun-ms3asclu"
