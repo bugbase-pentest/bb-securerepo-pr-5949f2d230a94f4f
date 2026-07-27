@@ -1,8 +1,0 @@
-name: BugBase benign local action
-description: Synthetic local action for Allowed Actions policy testing
-runs:
-  using: composite
-  steps:
-    - name: Synthetic local action body
-      shell: bash
-      run: echo "bb-wrp-runtime-action-local-unallowed-enforce-ms3bu2w6-local-action"
