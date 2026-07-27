@@ -1,8 +1,0 @@
-name: Harden Runner
-description: Benign BugBase wrong-owner lookalike action
-runs:
-  using: composite
-  steps:
-    - name: Synthetic lookalike owner body
-      shell: bash
-      run: echo "bb-wrp-runtime-lookalike-owner-enforce-ms398dmo-lookalike-owner"
