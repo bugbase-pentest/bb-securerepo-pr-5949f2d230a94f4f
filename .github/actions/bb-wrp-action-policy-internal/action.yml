@@ -1,8 +1,0 @@
-name: BugBase benign internal subpath action
-description: Synthetic internal/private Allowed Actions control
-runs:
-  using: composite
-  steps:
-    - name: Synthetic internal action body
-      shell: bash
-      run: echo "bb-wrp-runtime-action-internal-subpath-allowed-dryrun-ms3b9205-internal-action"
