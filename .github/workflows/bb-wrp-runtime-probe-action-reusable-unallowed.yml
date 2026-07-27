@@ -1,0 +1,11 @@
+name: BugBase WRP Allowed Actions action-reusable-unallowed
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-reusable:
+    uses: ./.github/workflows/bb-wrp-action-policy-reusable-callee.yml
