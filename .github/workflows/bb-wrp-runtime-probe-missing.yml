@@ -1,0 +1,14 @@
+name: BugBase WRP Harden Runner Presence missing
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Synthetic marker
+        run: echo "bb-wrp-runtime-missing-dryrun-ms37bq7x"
