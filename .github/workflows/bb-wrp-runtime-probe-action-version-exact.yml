@@ -1,0 +1,16 @@
+name: BugBase WRP Allowed Actions action-version-exact
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Version-scoped checkout probe
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Marker after version-scoped checkout
+        run: echo "bb-wrp-runtime-action-version-exact-dryrun-ms3bv6c2"
