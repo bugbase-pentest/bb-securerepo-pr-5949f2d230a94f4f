@@ -1,0 +1,16 @@
+name: BugBase WRP Allowed Actions action-internal-owner-wildcard-allowed
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Synthetic internal subpath action
+        uses: bugbase-pentest/bb-securerepo-pr-5949f2d230a94f4f/.github/actions/bb-wrp-action-policy-internal@35a90d102e033fc8c494143f5b1807b7f77f034f
+      - name: Marker after internal subpath action
+        run: echo "bb-wrp-runtime-action-internal-owner-wildcard-allowed-dryrun-ms3c1kw6"
